@@ -130,6 +130,8 @@ python main.py
 
 **适合**: 个人用户、小团队试用
 
+**[立即下载](https://github.com/2316540487-eng/feishu-second-brain)**
+
 ---
 
 ### 专业版（¥299/月）
@@ -143,7 +145,13 @@ python main.py
 
 **适合**: 中小团队、知识密集型团队
 
-[立即升级](https://github.com/sponsors/<你的用户名>)
+**购买流程**:
+1. 扫描下方收款码付款
+2. 发送付款截图到：`2316540487@qq.com`
+3. 收到邀请加入专业版仓库
+4. 开始使用专业功能
+
+![微信支付](payment-wechat.png)
 
 ---
 
@@ -158,7 +166,7 @@ python main.py
 
 **适合**: 中大型企业、对数据安全要求高的团队
 
-[联系销售](mailto:your-email@example.com)
+**[联系销售](mailto:2316540487@qq.com)**
 
 ---
 
