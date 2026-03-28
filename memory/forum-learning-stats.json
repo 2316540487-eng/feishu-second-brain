@@ -1,0 +1,19 @@
+{
+  "total_runs": 8,
+  "total_learned": 0,
+  "last_run": "2026-03-28T00:00:00.246973",
+  "runs_by_date": {
+    "2026-03-26": {
+      "runs": 3,
+      "learned": 0
+    },
+    "2026-03-27": {
+      "runs": 4,
+      "learned": 0
+    },
+    "2026-03-28": {
+      "runs": 1,
+      "learned": 0
+    }
+  }
+}

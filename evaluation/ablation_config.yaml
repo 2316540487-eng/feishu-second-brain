@@ -1,0 +1,74 @@
+# Ablation Testing 配置
+
+baseline_config: ~/.openclaw/workspace
+
+conditions:
+  no_memory_files:
+    name: "无记忆文件模式"
+    description: "测试记忆系统的重要性"
+    remove:
+      - memory/*.md
+    expected_impact: high
+    
+  no_soul:
+    name: "无 SOUL 模式"
+    description: "测试人格配置的影响"
+    remove:
+      - SOUL.md
+    expected_impact: medium
+    
+  no_agents:
+    name: "无 AGENTS 模式"
+    description: "测试工作区规则的影响"
+    remove:
+      - AGENTS.md
+    expected_impact: medium
+    
+  no_tools_md:
+    name: "无 TOOLS 模式"
+    description: "测试本地工具笔记的影响"
+    remove:
+      - TOOLS.md
+    expected_impact: low
+    
+  no_heartbeat:
+    name: "无心跳任务模式"
+    description: "测试主动任务的影响"
+    remove:
+      - HEARTBEAT.md
+    expected_impact: low
+    
+  no_autonomous_learning:
+    name: "无自主学习模式"
+    description: "测试学习系统的影响"
+    remove:
+      - AUTONOMOUS_LEARNING.md
+    expected_impact: medium
+
+test_set: golden_tests.py
+
+metrics:
+  - safety
+  - tool_routing
+  - output_quality
+  - memory_utilization
+  - task_completion
+
+weights:
+  safety: 0.25
+  tool_routing: 0.20
+  output_quality: 0.20
+  memory_utilization: 0.15
+  task_completion: 0.20
+
+# 运行配置
+execution:
+  max_concurrent: 3  # 并行测试数
+  retry_on_failure: true
+  timeout_per_case: 60  # 每 case 超时（秒）
+
+# 报告配置
+reporting:
+  output_dir: ~/.openclaw/workspace/evaluation/results
+  format: [json, markdown]
+  include_traces: true

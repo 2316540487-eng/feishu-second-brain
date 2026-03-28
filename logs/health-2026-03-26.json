@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-03-26T08:00:00.382407",
+  "hostname": "yydeMac-mini.local",
+  "disk": {
+    "total": "228Gi",
+    "used": "12Gi",
+    "available": "177Gi",
+    "usage_percent": "7"
+  },
+  "memory": {
+    "free_mb": 1356.140625,
+    "active_mb": 6017.953125,
+    "wired_mb": 1730.859375,
+    "compressed_mb": 2424.296875
+  },
+  "load": {
+    "1min": 1.14,
+    "5min": 1.17,
+    "15min": 1.16
+  },
+  "processes": 702,
+  "cache": {
+    "error": "name 'sys' is not defined"
+  },
+  "issues": [],
+  "status": "healthy"
+}
